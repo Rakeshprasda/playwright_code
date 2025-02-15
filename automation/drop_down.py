@@ -32,7 +32,7 @@ class drop_down(HomePage):
         self.option= self.page.locator("select#Skills > option")
         self.select_opt = self.option.nth(20).get_attribute("value")
         self.page.select_option("select#Skills",value=self.select_opt)
-        print("select dorpdown by value")
+        print("select dorpdown by value for test")
         self.page.wait_for_timeout(9000)
 
 
